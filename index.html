@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ViWos - Home</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<nav>
+    <h1>ViWos</h1>
+    <div class="menu">
+        <div class="menu-elements">
+            <div><a href="#apropos">À propos</a></div>
+            <div><a href="#services">Services</a></div>
+            <div><a href="#references">Références</a></div>
+            <div><a href="#contact">Contact</a></div>
+        </div>
+        <div class="burger">
+            <button onclick="displayMenu()" class="burger-button"><i class="fas fa-bars"></i></button>
+            <div id="burger-elements">
+                <div><a href="#apropos">À propos</a></div>
+                <div><a href="#services">Services</a></div>
+                <div><a href="#references">Références</a></div>
+                <div><a href="#contact">Contact</a></div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div id="container">
+
+    <!--  ***** A propos *****  -->
+    <div id="apropos">
+        <h2 class="flex-child">À propos</h2>
+        <div class="flex-child">
+            <h3>Dolores situm</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <!--  ***** Services *****  -->
+    <div id="services">
+        <h2>Services</h2>
+        <div class="elements-container">
+            <div class="elements">
+                <img src="./images/advice.jpg">
+                <h3><a href="info.html">Conseils</a></h3>
+            </div>
+            <div class="elements">
+                <img src="./images/developpement.png">
+                <h3><a href="info.html">Développement</a></h3>
+            </div>
+            <div class="elements">
+                <img src="./images/maintenance.jpg">
+                <h3><a href="info.html">Maintenance</a></h3>
+            </div>
+            <div class="elements">
+                <img src="./images/service1.jpg">
+                <h3><a href="info.html">Formations</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Références ***** -->
+    <div id="references">
+        <h2>Références</h2>
+        <div class="elements-container">
+            <div class="elements">
+                <img src="./images/renault.jpg">
+                <h3>GROUPE RENAULT</h3>
+            </div>
+            <div class="elements">
+                <img src="./images/airbus.jpg">
+                <h3>AIRBUS</h3>
+            </div>
+            <div class="elements">
+                <img src="./images/sncf.jpg">
+                <h3>OUI.SNCF</h3>
+            </div>
+            <div class="elements">
+                <img src="./images/safran.jpg">
+                <h3>SAFRAN</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <h2>Contact</h2>
+        <div>
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <label class="required" for="name">Nom</label>
+                    <input id="name" class="input" name="name" type="text"/>
+                    <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="email">Email</label>
+                    <input id="email" class="input" name="email" type="text"/>
+                    <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="message">Message</label>
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea>
+                    <span id="message_validation" class="error_message"></span>
+                </div>
+                <input id="submit_button" type="submit" value="Envoyer"/>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

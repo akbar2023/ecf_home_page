@@ -1,0 +1,201 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background: black;
+    color: beige;
+    top: 0;
+    z-index: 1;
+}
+
+nav h1 {
+    position: relative;
+    left: 50px;
+}
+
+nav a {
+    color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.burger {
+    display: none;
+}
+
+.menu-elements {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    top: 30%;
+}
+
+.menu-elements div {
+    margin: 0 auto;
+    position: relative;
+    right: 30%;
+}
+
+#container {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#apropos, #services, #references, #contact {
+    margin: 70px auto;
+}
+
+/* ***** À propos ***** */
+#apropos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-child:nth-child(1) {
+    width: 100%;
+}
+
+.flex-child:not(:first-child) {
+    max-width: 900px;
+}
+
+.apropos-img {
+    width: 100%;
+}
+
+/* ***** Services ***** */
+
+.elements-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.elements {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    transition: transform .5s;
+}
+
+.elements:hover {
+    transform: scale(1.1);
+}
+
+.elements img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ***** Références ***** */
+
+/* ***** Contact ***** */
+form {
+    width: 100%;
+    margin: 10px auto 100px;
+}
+
+form div {
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    width: 400px;
+    border-radius: 3px;
+    height: 40px;
+    border: 1px solid;
+}
+
+form textarea {
+    width: 400px;
+    border-radius: 3px;
+    height: 150px;
+    border: 1px solid;
+}
+
+
+@media screen and (max-width: 1350px) {
+    .elements-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .burger {
+        display: inline-block;
+        position: relative;
+        top: 25px;
+        right: 50px;
+    }
+
+    .menu-elements {
+        display: none;
+    }
+
+    #burger-elements {
+        display: none;
+        background: #282828;
+        border-radius: 5px;
+        padding: 5px;
+
+    }
+
+    /* ***** À propos ***** */
+    .flex-child:not(:first-child) {
+        width: 100%;
+        margin: auto 50px;
+    }
+
+    .elements-container {
+        grid-template-columns: 1fr;
+    }
+
+    .elements {
+        margin: 40px 20px;
+    }
+
+    form input {
+        width: 250px;
+        height: 30px;
+    }
+
+    form textarea {
+        width: 250px;
+        height: 100px;
+    }
+}
+
+
+
+
